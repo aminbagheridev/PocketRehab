@@ -144,9 +144,30 @@ Here is an example of the check for the lower back:
 
 And that's pretty much it! Pain map implementation is done!
 
+## Implementing Exercise Video Previews
+
+To show users a video in order to help guide them through exercises, I used AVFoundation and AVPlayer, as well as NotificationCenter to keep the video playing in a loop, so the users don't have to fiddle with rewind, pause, etc.
+
+To create the video player, I used a UIViewRepresentable as I could not find a good SwiftUI way to implement what I was looking for.
+
+So, how does this work? Well when initialising the player, we add in a video url as a parameter, and this url is choosen from a whole library of videos I have in the XCode files, for example a Standing Lat Stretch video:
+```
+Bundle.main.url(forResource: "standingLatStretch", withExtension: "mp4")!
+```
+
+Now, in order to get the video to loop, I set up a Notification observer that is oberserving the **.AVPlayerItemDidPlayToEndTime** Notification.
+
+So basically, whenever the video ends, a notification gets sent out. Our observer 'hears' the notification and runs a method that rewinds the video back to the beginning, where it simply continues playing as if it never ended. 
+
+Cool stuff!
+
+*(Code sample below)*
+![](https://github.com/bagheriamin/PocketRehab/blob/main/carbon-27.png?raw=true)
 ## Installation
 
 Download the project via Code > Download as ZIP
 
-If the SDWebImage package has not downloaded properly, here is the link to install it in the Swift Package Manager as a third-party dependency:
-https://github.com/SDWebImage/SDWebImage.git
+Then cd via command line to the project and simply run the following in command line.
+```bash
+  pod install
+```
