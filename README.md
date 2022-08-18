@@ -52,6 +52,7 @@ MVVM
 To authenticate users in my app, I opted to go for Firestore Auth, as it is one, free, which for an independant app developer is always a plus, and two, it is highly scalable, so my app will be handled properly no matter the user count.
 
 *I purposefully put incorrect data to showcase login/register errors. The login IS NOT BROKEN! 😂*
+
 ![](https://github.com/bagheriamin/PocketRehab/blob/main/Simulator%20Screen%20Recording%20-%20iPhone%2011%20-%202022-08-18%20at%2011.52.45.gif?raw=true)
 
 To verify that users emails and passwords were implemented in the correct format, I went ahead and used RegEx, or RegularExpressions to complete the validation process. Here is an example of the password RegEx, as well as the function to make sure the two passwords are the same.
