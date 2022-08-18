@@ -1,0 +1,16 @@
+
+
+CAT AND COWS VIDEO URL:
+                Bundle.main.url(forResource: "catCow", withExtension: "mp4")!
+                
+COSSACK SQUAT VIDEO URL:
+                Bundle.main.url(forResource: "cossackSquat", withExtension: "mp4")!
+                
+PIKE TO COBRA VIDEO URL:
+                Bundle.main.url(forResource: "pikeToCobra", withExtension: "mp4")!
+                
+STANDING LAT STRETCH VIDEO URL:
+                Bundle.main.url(forResource: "standingLatStretch", withExtension: "mp4")!
+
+WORLDS GREATEST STRETCH VIDEO URL:
+                Bundle.main.url(forResource: "worldsGreatestStretch", withExtension: "mp4")!
