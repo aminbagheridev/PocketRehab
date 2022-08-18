@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "emailcomposer",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gabrieltheodoropoulos/EmailComposer",
+      "state" : {
+        "revision" : "6c35d94b4abd760c3d1eb513ea59baabaecad607",
+        "version" : "1.0.2"
+      }
+    }
+  ],
+  "version" : 2
+}
